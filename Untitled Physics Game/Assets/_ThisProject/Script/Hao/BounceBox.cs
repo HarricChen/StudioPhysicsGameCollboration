@@ -22,9 +22,9 @@ public class BounceBox : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other != null)
+        if (other != null)
         {
-            if (other.gameObject.tag == "Player")
+            if (other.gameObject.tag == "Player" || other.gameObject.tag == "Hinge")
             {
                 if(playerIsPushed == false)
                 {
@@ -44,4 +44,10 @@ public class BounceBox : MonoBehaviour
         _rb2D.AddForce(transform.up * addForceToSelf);
         playerIsPushed = false;
     }
+
+    void pushplayers()
+    {
+
+    }
+
 }

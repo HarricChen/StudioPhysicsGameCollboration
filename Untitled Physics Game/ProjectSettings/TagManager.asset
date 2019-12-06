@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Car
+  - Hinge
   layers:
   - Default
   - TransparentFX

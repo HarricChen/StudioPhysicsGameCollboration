@@ -11,7 +11,7 @@ public class ButtonCreatePlatform : MonoBehaviour
     {
         if(other !=null)
         { 
-            if(other.tag == "Player")
+            if(other.tag == "Player" || other.tag =="Hinge")
             {
                 controlPlatform.SetActive(true);
             }

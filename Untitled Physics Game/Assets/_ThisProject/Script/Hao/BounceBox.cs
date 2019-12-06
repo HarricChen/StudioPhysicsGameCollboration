@@ -11,10 +11,13 @@ public class BounceBox : MonoBehaviour
     public float addForceToSelf;
     public float pushPlayerTime;
     public bool playerIsPushed;
+    //public Transform objDir;
+    //public Vector2 bounceDir;
 
     private void Start()
     {
         _rb2D = this.gameObject.GetComponent<Rigidbody2D>();
+        //bounceDir = objDir.position - this.transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -37,8 +40,8 @@ public class BounceBox : MonoBehaviour
     IEnumerator PushPlayer()
     {
         yield return new WaitForSeconds(pushPlayerTime);
-        playerRb2D.AddForce(Vector2.up * addForceToPlayer);
-        _rb2D.AddForce(Vector2.up * addForceToSelf);
+        playerRb2D.AddForce(transform.up * addForceToPlayer);
+        _rb2D.AddForce(transform.up * addForceToSelf);
         playerIsPushed = false;
     }
 }

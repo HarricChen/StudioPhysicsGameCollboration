@@ -7,9 +7,21 @@ public class HingeForce : MonoBehaviour
 
     Rigidbody2D _rb2D;
     public float rotateForce;
+    public bool footHold;
 
-    public KeyCode counterClockwise;
-    public KeyCode Clockwise;
+
+    //direction this foot spins to
+    public enum FootDir
+    {
+        CounterClockwise,
+        Clockwise
+    }
+
+    public FootDir thisFoot;
+
+
+    public KeyCode spinKey;
+
 
     private void Start()
     {
@@ -18,15 +30,40 @@ public class HingeForce : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(Clockwise))
-        {   
-            _rb2D.AddTorque(-rotateForce);
+        Spin();
+        FootHold();
+    }
+
+    void Spin()
+    {
+        if (Input.GetKey(spinKey))
+        {
+
+            if (thisFoot == FootDir.Clockwise)
+            {
+                _rb2D.AddTorque(-rotateForce);
+            }
+
+            else
+            {
+                _rb2D.AddTorque(rotateForce);
+            }
+        }
+    }
+
+    void FootHold()
+    {
+        if(Input.GetKeyDown(spinKey))
+        {
+            footHold = true;
         }
 
-        if (Input.GetKey(counterClockwise))
+        if (Input.GetKeyUp(spinKey))
         {
-            _rb2D.AddTorque(rotateForce);
+            footHold = false;
         }
 
     }
+
+
 }

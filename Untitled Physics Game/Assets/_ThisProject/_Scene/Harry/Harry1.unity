@@ -7332,7 +7332,7 @@ Transform:
   - {fileID: 1350945573}
   - {fileID: 398539760}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &565844056 stripped
 Transform:
@@ -8123,8 +8123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateForce: 110
-  counterClockwise: 0
-  Clockwise: 101
+  footHold: 0
+  thisFoot: 0
+  spinKey: 0
 --- !u!1 &676385860
 GameObject:
   m_ObjectHideFlags: 0
@@ -10384,8 +10385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateForce: 110
-  counterClockwise: 113
-  Clockwise: 0
+  footHold: 0
+  thisFoot: 0
+  spinKey: 0
 --- !u!233 &813505859
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -11032,7 +11034,7 @@ PrefabInstance:
     - target: {fileID: 6196223906707751534, guid: 94130cc6ad165844aba872a59c714c90,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6196223906707751534, guid: 94130cc6ad165844aba872a59c714c90,
         type: 3}
@@ -13619,8 +13621,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateForce: 110
-  counterClockwise: 113
-  Clockwise: 0
+  footHold: 0
+  thisFoot: 0
+  spinKey: 0
 --- !u!4 &1057506475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6196223906707751534, guid: 94130cc6ad165844aba872a59c714c90,
@@ -15725,8 +15728,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateForce: 110
-  counterClockwise: 113
-  Clockwise: 0
+  footHold: 0
+  thisFoot: 0
+  spinKey: 0
 --- !u!233 &1191402735
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -17014,7 +17018,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1e81d5cdd93e84b5b80bc57a8278cfae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1e81d5cdd93e84b5b80bc57a8278cfae,
         type: 3}
@@ -18957,8 +18961,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateForce: 110
-  counterClockwise: 0
-  Clockwise: 101
+  footHold: 0
+  thisFoot: 0
+  spinKey: 0
 --- !u!233 &1407489203
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -21473,8 +21478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateForce: 110
-  counterClockwise: 0
-  Clockwise: 101
+  footHold: 0
+  thisFoot: 0
+  spinKey: 0
 --- !u!233 &1591766687
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -27995,7 +28001,7 @@ PrefabInstance:
     - target: {fileID: 6196223906707751534, guid: 94130cc6ad165844aba872a59c714c90,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6196223906707751534, guid: 94130cc6ad165844aba872a59c714c90,
         type: 3}

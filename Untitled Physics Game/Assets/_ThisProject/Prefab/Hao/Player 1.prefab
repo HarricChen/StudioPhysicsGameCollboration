@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3851348155773151418}
   m_Layer: 12
   m_Name: Hinge1
-  m_TagString: Player
+  m_TagString: Hinge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   footHold: 0
   thisFoot: 0
   spinKey: 276
+  spinKeyController: 334
 --- !u!1 &3851348155946466370
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +314,7 @@ GameObject:
   - component: {fileID: 3851348156016236599}
   m_Layer: 12
   m_Name: Hinge2
-  m_TagString: Player
+  m_TagString: Hinge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -410,6 +411,7 @@ MonoBehaviour:
   footHold: 0
   thisFoot: 1
   spinKey: 275
+  spinKeyController: 335
 --- !u!1 &3851348156310285916
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +720,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 80c6017f5c3054750a188a9923caba67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -757,7 +759,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3851348156690158841}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.5, y: 54.3, z: 0}
   m_LocalScale: {x: 0.5846442, y: 0.5846442, z: 0.5846442}
   m_Children:

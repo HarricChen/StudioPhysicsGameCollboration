@@ -19,11 +19,18 @@ public class TriggerMask : MonoBehaviour
 
      void OnTriggerEnter2D(Collider2D collision)
     {
-        Mask.SetActive(true);
+        if (collision.gameObject.tag == "Player")
+        {
+            Mask.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Mask.SetActive(false);
+        if (collision.gameObject.tag == "Player")
+        {
+            Mask.SetActive(false);
+        }
+        
     }
 }

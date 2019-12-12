@@ -21,6 +21,7 @@ public class HingeForce : MonoBehaviour
 
 
     public KeyCode spinKey;
+    public KeyCode spinKeyController;
 
 
     private void Start()
@@ -36,7 +37,7 @@ public class HingeForce : MonoBehaviour
 
     void Spin()
     {
-        if (Input.GetKey(spinKey))
+        if (Input.GetKey(spinKey) || Input.GetKey(spinKeyController))
         {
 
             if (thisFoot == FootDir.Clockwise)

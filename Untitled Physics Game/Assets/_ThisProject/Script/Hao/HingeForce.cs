@@ -29,9 +29,13 @@ public class HingeForce : MonoBehaviour
         _rb2D = this.gameObject.GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Spin();
+    }
+
+    private void Update()
+    {
         FootHold();
     }
 
@@ -54,12 +58,12 @@ public class HingeForce : MonoBehaviour
 
     void FootHold()
     {
-        if(Input.GetKeyDown(spinKey))
+        if(Input.GetKeyDown(spinKeyController) || Input.GetKeyDown(spinKey))
         {
             footHold = true;
         }
 
-        if (Input.GetKeyUp(spinKey))
+        if (Input.GetKeyUp(spinKeyController) || Input.GetKeyUp(spinKey))
         {
             footHold = false;
         }

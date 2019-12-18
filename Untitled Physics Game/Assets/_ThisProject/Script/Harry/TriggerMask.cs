@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class TriggerMask : MonoBehaviour
 {
-    public GameObject Mask;
+    public SpriteRenderer[] Mask;
+
     // Start is called before the first frame update
     void Start()
     {
-        Mask.SetActive(false);
+        foreach(var mask in Mask)
+        {
+            mask.enabled = false;
+        }
+
+        //Mask.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,7 +27,12 @@ public class TriggerMask : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Mask.SetActive(true);
+
+            foreach (var mask in Mask)
+            {
+                mask.enabled = true;
+            }
+            //Mask.SetActive(true);
         }
     }
 
@@ -29,7 +40,11 @@ public class TriggerMask : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Mask.SetActive(false);
+            foreach (var mask in Mask)
+            {
+                mask.enabled = false;
+            }
+            //Mask.SetActive(false);
         }
         
     }

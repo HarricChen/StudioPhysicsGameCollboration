@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BounceBox : MonoBehaviour
 {
-
+    public AudioSource springSound; 
     public Rigidbody2D playerRb2D;
     Rigidbody2D _rb2D;
     public float addForceToPlayer; 
@@ -32,6 +32,7 @@ public class BounceBox : MonoBehaviour
                     StartCoroutine(PushPlayer());
                     _rb2D.AddForce(Vector2.down * addForceToSelf);
                     playerIsPushed = true;
+                    springSound.Play();
                 }
             }
         }

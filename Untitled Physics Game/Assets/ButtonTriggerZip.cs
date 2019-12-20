@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class ButtonTriggerZip : MonoBehaviour
 {
-
+    public AudioSource button;
+    bool buttonCheck = true;
+    public AudioSource zipSound;
+    
     ZipMove zip;
 
     private void Start()
@@ -20,6 +23,12 @@ public class ButtonTriggerZip : MonoBehaviour
             if (other.tag == "Player" || other.tag == "Hinge")
             {
                 zip.isMove = true;
+                if (buttonCheck == true)
+                {
+                    button.Play();
+                    zipSound.Play();
+                    buttonCheck = false;
+                }
             }
         }
     }
